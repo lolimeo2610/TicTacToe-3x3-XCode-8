@@ -13,6 +13,9 @@
 		2544B0C11E7B8D5900E00898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2544B0C01E7B8D5900E00898 /* Assets.xcassets */; };
 		2544B0C41E7B8D5900E00898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2544B0C21E7B8D5900E00898 /* LaunchScreen.storyboard */; };
 		2544B0CC1E7B949A00E00898 /* squareG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2544B0CB1E7B949A00E00898 /* squareG.png */; };
+		254660491E9247B400CD2D9E /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254660481E9247B400CD2D9E /* HistoryVC.swift */; };
+		258A9D041E8F23D40062142F /* chopin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 258A9D031E8F23D40062142F /* chopin.mp3 */; };
+		25B5DFB71E8FED1A0075E3D1 /* NameChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5DFB61E8FED1A0075E3D1 /* NameChanger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		2544B0C31E7B8D5900E00898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2544B0C51E7B8D5900E00898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2544B0CB1E7B949A00E00898 /* squareG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = squareG.png; path = "Image Asset/squareG.png"; sourceTree = "<group>"; };
+		254660481E9247B400CD2D9E /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryVC.swift; path = ../HistoryVC.swift; sourceTree = "<group>"; };
+		258A9D031E8F23D40062142F /* chopin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chopin.mp3; path = "Music File/chopin.mp3"; sourceTree = "<group>"; };
+		25B5DFB61E8FED1A0075E3D1 /* NameChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameChanger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		2544B0B81E7B8D5900E00898 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				258A9D061E8F23EC0062142F /* Image */,
+				258A9D051E8F23D80062142F /* Music */,
 				2544B0B91E7B8D5900E00898 /* AppDelegate.swift */,
 				2544B0BB1E7B8D5900E00898 /* ViewController.swift */,
+				254660481E9247B400CD2D9E /* HistoryVC.swift */,
 				2544B0BD1E7B8D5900E00898 /* Main.storyboard */,
+				25B5DFB61E8FED1A0075E3D1 /* NameChanger.swift */,
 				2544B0C01E7B8D5900E00898 /* Assets.xcassets */,
-				2544B0CB1E7B949A00E00898 /* squareG.png */,
 				2544B0C21E7B8D5900E00898 /* LaunchScreen.storyboard */,
 				2544B0C51E7B8D5900E00898 /* Info.plist */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		258A9D051E8F23D80062142F /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				258A9D031E8F23D40062142F /* chopin.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		258A9D061E8F23EC0062142F /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				2544B0CB1E7B949A00E00898 /* squareG.png */,
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,6 +125,7 @@
 					2544B0B51E7B8D5800E00898 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 24SM6522LU;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +157,7 @@
 				2544B0C11E7B8D5900E00898 /* Assets.xcassets in Resources */,
 				2544B0CC1E7B949A00E00898 /* squareG.png in Resources */,
 				2544B0BF1E7B8D5900E00898 /* Main.storyboard in Resources */,
+				258A9D041E8F23D40062142F /* chopin.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +168,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B5DFB71E8FED1A0075E3D1 /* NameChanger.swift in Sources */,
+				254660491E9247B400CD2D9E /* HistoryVC.swift in Sources */,
 				2544B0BC1E7B8D5900E00898 /* ViewController.swift in Sources */,
 				2544B0BA1E7B8D5900E00898 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +333,7 @@
 				2544B0CA1E7B8D5900E00898 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
